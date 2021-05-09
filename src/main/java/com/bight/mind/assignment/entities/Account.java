@@ -10,6 +10,7 @@ import java.util.List;
 public class Account {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "account_type")
@@ -18,6 +19,6 @@ public class Account {
     @Column(name = "account_number")
     private String accountNumber;
 
-    @OneToMany(mappedBy = "statement", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "account", cascade = CascadeType.ALL)
     private List<Statement> statements;
 }

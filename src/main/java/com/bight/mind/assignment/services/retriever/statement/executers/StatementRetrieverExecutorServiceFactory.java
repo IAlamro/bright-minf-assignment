@@ -2,7 +2,7 @@ package com.bight.mind.assignment.services.retriever.statement.executers;
 
 import com.bight.mind.assignment.services.retriever.statement.StatementRequest;
 
-public interface StatementRetrieverExecuterServiceFactory {
+public interface StatementRetrieverExecutorServiceFactory {
 
-    StatementRetrieverExecuterService get(StatementRequest statementRequest);
+    StatementRetrieverExecutorService get(StatementRequest statementRequest);
 }

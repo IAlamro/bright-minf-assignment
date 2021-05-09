@@ -2,6 +2,7 @@ package com.bight.mind.assignment.services.retriever.statement;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 

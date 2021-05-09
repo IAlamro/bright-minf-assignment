@@ -12,7 +12,11 @@ import java.util.List;
 @RequestMapping("/api")
 public class StatementsController {
 
-    private StatementRetriever statementRetriever;
+    private final StatementRetriever statementRetriever;
+
+    public StatementsController(StatementRetriever statementRetriever) {
+        this.statementRetriever = statementRetriever;
+    }
 
     @GetMapping("/admin/users/{userId}/statements")
     public List<Statement> getStatements(@PathVariable("userId") long accountId,

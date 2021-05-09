@@ -10,6 +10,7 @@ import java.time.LocalDate;
 public class Statement {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @JoinColumn(name = "account_id")

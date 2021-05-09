@@ -6,7 +6,7 @@ import com.bight.mind.assignment.services.retriever.statement.StatementRequest;
 import java.util.List;
 
 @FunctionalInterface
-public interface StatementRetrieverExecuterService {
+public interface StatementRetrieverExecutorService {
 
     List<Statement> execute(StatementRequest statementRequest);
 }

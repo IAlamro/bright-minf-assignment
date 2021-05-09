@@ -1,7 +1,7 @@
 package com.bight.mind.assignment.services.retriever.statement;
 
 import com.bight.mind.assignment.entities.Statement;
-import com.bight.mind.assignment.services.retriever.statement.executers.StatementRetrieverExecuterServiceFactory;
+import com.bight.mind.assignment.services.retriever.statement.executers.StatementRetrieverExecutorServiceFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Service
 public class StatementRetrieverImpl implements StatementRetriever{
 
-    private StatementRetrieverExecuterServiceFactory statementRetrieverExecuterServiceFactory;
+    private StatementRetrieverExecutorServiceFactory statementRetrieverExecuterServiceFactory;
 
-    public StatementRetrieverImpl(StatementRetrieverExecuterServiceFactory statementRetrieverExecuterServiceFactory) {
+    public StatementRetrieverImpl(StatementRetrieverExecutorServiceFactory statementRetrieverExecuterServiceFactory) {
         this.statementRetrieverExecuterServiceFactory = statementRetrieverExecuterServiceFactory;
     }
 
